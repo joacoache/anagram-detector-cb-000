@@ -9,14 +9,15 @@ class Anagram
   end
 
   def match(array)
+    b = @word.split("")
     array.each do |words|
       words.each do |letters|
-        a = letters.split("").sort
-        if a == @word.split("").sort
+        a = letters.split("")
+        if a.sort == b.sort
           @@array << letters
         end
       end
     end
-  end      
+  end
 
 end
