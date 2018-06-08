@@ -2,8 +2,6 @@
 class Anagram
   attr_accessor :word
 
-  @@array = []
-
   def initialize(word)
     @word = word
   end
@@ -12,7 +10,7 @@ class Anagram
     @arr = []
     array.each do |words|
       if words.split("").sort == @word.split("").sort
-          @arr << letters
+          @arr << words
       end
     end
     @arr
