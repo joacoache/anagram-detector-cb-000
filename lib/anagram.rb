@@ -13,7 +13,6 @@ class Anagram
     array.each do |words|
       if words.split("").sort == @word.split("").sort
           @arr << letters
-        end
       end
     end
     @arr
