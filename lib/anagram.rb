@@ -16,6 +16,7 @@ class Anagram
           @@array << letters
         end
       end
-    end      
+    end
+  end      
 
 end
