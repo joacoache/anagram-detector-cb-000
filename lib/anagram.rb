@@ -9,15 +9,16 @@ class Anagram
   end
 
   def match(array)
+    @arr = []
     array.each do |words|
       words.each do |letters|
         a = letters.split("").sort
         if a == @word.split("").sort
-          @@array << letters
+          @arr << letters
         end
       end
     end
-    @@array
+    @arr
   end
 
 end
